@@ -45,7 +45,8 @@
     "postbuild": "node scripts/postbuild.js",
     "test": "jest",
     "cypress-open": "cypress open cypress run",
-    "cypress-run": "cypress run cypress run"
+    "cypress-run": "cypress run cypress run",
+    "postinstall": "npm-run-all build-db"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
